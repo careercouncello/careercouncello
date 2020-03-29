@@ -1,0 +1,119 @@
+body {
+  font-family: "Roboto";
+}
+
+/** ======================================================*/
+/** ============      Navigation Bar        ==============*/
+/** ======================================================*/
+
+/** ======================================================*/
+/** ============        Contact Section     ==============*/
+/** ======================================================*/
+
+.find-us-container {
+  background-color: salmon;
+  color: white;
+
+  height: 80vh;
+}
+
+.contact-info-container {
+  height: 80vh;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-info {
+  color: white;
+  width: 100%;
+  margin: 2em 0;
+}
+.contact-info h4 {
+  margin-bottom: 1em;
+  font-family: "McLaren", cursive;
+}
+
+.contact-info p {
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
+
+.contact-info p:nth-child(6),
+.contact-info p:nth-child(8) {
+  margin-bottom: 2em;
+}
+
+.contact-info button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 2em;
+  border-radius: 25px;
+}
+
+.contact-form {
+  color: white;
+  width: 100%;
+  margin: 2em 0;
+}
+
+.contact-form-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+/* ?=============   Medium Screens    =================== */
+
+@media (max-width: 850px) {
+  .header {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  
+
+/* ?=============   Xtra Small Screens    =================== */
+
+@media (max-width: 320px) {
+  .nav-links a {
+    font-size: 0.5rem;
+  }
+}
+
+/** ======================================================*/
+/** ===========    Toggle-able Classes      ==============*/
+/** ======================================================*/
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+h3 {
+  margin-bottom: 400px;
+}

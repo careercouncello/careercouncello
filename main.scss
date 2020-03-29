@@ -1,0 +1,82 @@
+body {
+  background-color: rgb(240, 206, 156);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo1 {
+  width: 100vw;
+}
+.point {
+  margin-bottom: 100px;
+}
+.all {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+ul {
+  margin-left: 10px;
+}
+
+.title {
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+
+  .avatar1 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .image1 {
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+  }
+}
+h2 {
+  margin-bottom: -10px;
+}
+
+.points {
+  margin-top: 80px;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: max-content;
+  max-width: 90vw;
+
+  .point {
+    margin-bottom: 10px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20px auto;
+    text-align: left;
+
+    &::before {
+      content: "✔";
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+.btn {
+  background-color: rgb(141, 65, 3);
+}
+button {
+  background-color: black;
+  width: 100%;
+  padding: 50px;
+  font-size: 27px;
+  text-transform: none;
+  border-radius: 10px;
+}

@@ -1,0 +1,306 @@
+<html>
+  <head> 
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    
+  </head>
+  <body>
+    <script>
+       document.write("<h1><font color='6ad825'</font></h1>");
+
+      
+      var h = localStorage.getItem("SCIENCE AND TECHNOLOGY");
+      var i = localStorage.getItem("BIOLOGY");
+      var j = localStorage.getItem("COMMERCE");
+      var k = localStorage.getItem("ARTS&LITTERATURE");
+      var l = localStorage.getItem("FOODANDAGRICULTURE");
+      var m = (Number(h) * 100) / 25;
+      var n = (Number(i) * 100) / 20;
+      var o = (Number(j) * 100) / 15;
+      var p = (Number(k) * 100) / 5;
+      var q = (Number(l) * 100) / 5;
+      if (m > n && m > o && m > p && m > q) {
+        document.write(
+          "<h1 style='colour:orange;' align='centre'  txtcolour='orange' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY</h1 > "
+        );
+      }
+      if (n > m && n > o && n > p && n > q) {
+        document.write(
+          "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In BIOLOGY</h1 > "
+        );
+      }
+      if (o > m && o > n && o > p && o > q) {
+        document.write(
+          "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In COMMERCE</h1 > "
+        );
+      }
+      if (p > m && p > n && p > o && p > q) {
+        document.write(
+          "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In ARTS&LITTERATURE</h1 > "
+        );
+      }
+      if (q > m && q > n && q > p && q > o) {
+        document.write(
+          "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In FOOD&AGRICULTURE</h1 > "
+        );
+      }
+      if (m == n) {
+        if (m > o && m > p && m > q) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Courier Lies In SCIENCE&TECHNOLOGY And BIOLOGY</h1 > "
+          );
+        }
+      }
+      if (m == o) {
+        if (m > n && m > p && m > q) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY And COMMERCE</h1 > "
+          );
+        }
+      }
+      if (m == p) {
+        if (m > n && m > o && m > q) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY And ARTS&LITTERATURE </h1 > "
+          );
+        }
+      }
+      if (m == q) {
+        if (m > n && m > o && m > p) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY And FOOD&AGRICULTURE</h1 > "
+          );
+        }
+      }
+      if (n == o) {
+        if (n > m && n > p && n > q) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In BIOLOGY And COMMERCE</h1 > "
+          );
+        }
+      }
+      if (n == p) {
+        if (n > m && n > o && n > q) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In BIOLOGY And ARTS&LITTERATURE </h1 > "
+          );
+        }
+      }
+      if (n == q) {
+        if (n > m && n > o && n > p) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In BIOLOGY And FOOD&AGRICULTURE </h1 > "
+          );
+        }
+      }
+      if (o == p) {
+        if (o > m && o > n && o > q) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In COMMERCE And ARTS&LITTERATURE </h1 > "
+          );
+        }
+      }
+      if (o == q) {
+        if (o > m && o > n && o > p) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In COMMERCE And FOOD&AGRICULTURE</h1 > "
+          );
+        }
+      }
+      if (q == p) {
+        if (q > m && q > n && q > o) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In ARTS&LITTERATURE  And FOOD&AGRICULTURE</h1 > "
+          );
+        }
+      }
+      if (m == n && n == o) {
+        if (m > p && m > q) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY,BIOLOGY And COMMERCE </h1 > "
+          );
+        }
+      }
+      if (m == n && m == p) {
+        if (m > o && m > q) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY,BIOLOGY And ARTS&LITTERATURE</h1 > "
+          );
+        }
+      }
+      if (m == n && n == q) {
+        if (m > p && m > o) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY,BIOLOGY And FOOD&AGRICULTURE </h1 > "
+          );
+        }
+      }
+      if (m == o && o == p) {
+        if (m > n && m > q) {
+          document.write(
+            " CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY,COMMERCE And ARTS&LITTERATURE "
+          );
+        }
+      }
+      if (m == o && o == q) {
+        if (m > p && m > n) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY,COMMERCE And FOOD&AGRICULTURE </h1 > "
+          );
+        }
+      }
+      if (m == p && p == q) {
+        if (m > o && m > p) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY,ARTS&LITTERATURE  And FOOD&AGRICULTURE</h1 > "
+          );
+        }
+      }
+      if (n == o && o == p) {
+        if (n > m && n > q) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In BIOLOGY,COMMERCE And ARTS&LITTERATURE </h1 > "
+          );
+        }
+      }
+      if (n == o && o == q) {
+        if (n > m && n > p) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In BIOLOGY,COMMERCE And FOOD&AGRICULTURE   </h1 > "
+          );
+        }
+      }
+      if (n == p && p == q) {
+        if (n > m && n > o) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In  BIOLOGY,ARTS&LITTERATURE And FOOD&AGRICULTURE  </h1 > "
+          );
+        }
+      }
+      if (o == p && p == q) {
+        if (o > m && o > n) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In COMMERCE,ARTS&LITTERATURE And FOOD&AGRICULTURE</h1 > "
+          );
+        }
+      }
+      if (m == n && n == o && o == q) {
+        if (m > p) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY,BIOLOGY,COMMERCE And FOOD&AGRICULTURE</h1 > "
+          );
+        }
+      }
+      if (m == n && n == o && o == p) {
+        if (m > q) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY,BIOLOGY,COMMERCE And ARTS&LITTERATURE</h1 > "
+          );
+        }
+      }
+      if (m == n && n == p && p == q) {
+        if (m > o) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY,BIOLOGY,ARTS&LITTERATURE And FOOD&AGRICULTURE </h1 > "
+          );
+        }
+      }
+      if (m == o && o == p && p == q) {
+        if (m > n) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY,COMMERCE,ARTS&LITTERATURE And FOOD&AGRICULTURE</h1 > "
+          );
+        }
+      }
+      if (n == q && q == o && o == p) {
+        if (n > m) {
+          document.write(
+            "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In COMMERCE,ARTS&LITTERATURE,BIOLOGY And FOOD&AGRICULTURE</h1 > "
+          );
+        }
+      }
+      if (m == n && n == o && o == p && p == q) {
+        document.write(
+          "<h1 style='colour:orange;' align='centre' > CONGRATULATIONS!!The Scope Of Your Career Lies In SCIENCE&TECHNOLOGY,COMMERCE,ARTS&LITTERATURE,BIOLOGY And FOOD&AGRICULTURE</h1 > "
+        );
+      }
+    </script>
+  </body>
+  
+  <head>
+    <style>
+      background {
+        width: 50vw;
+      }
+      .btnm{
+        margin-top: 0px;
+        align-content: center;
+      }
+    </style>
+    
+    </body>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", { packages: ["corechart"] });
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["APPTITUDE TEST RESULT", "MARKS"],
+          ["SCIENCE&TECHNOLOGY", m],
+          ["BIOLOGY ", n],
+          ["COMMERCE", o],
+          ["ARTS&LITTERATUIRE", p],
+          ["FOOD&AGRICULTURE", q]
+        ]);
+
+        var options = {
+          title: 'APPTITUDE TEST RESULT',
+    width: 2000,
+    height: 700,
+    backgroundColor: 'f6dab0',
+    is3D: true,
+    pieSliceText: "value",
+        tooltip: {
+          trigger: "none"
+        }
+
+          
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("piechart2")
+        );
+        chart.draw(data, options);
+
+        [].slice
+          .call(document.querySelectorAll("#piechart2 path + text"))
+          .forEach(function(el) {
+            el.textContent += "%";
+          });
+        var totalFrames = window.frames.length;
+
+      }
+    </script>
+    <div class="w3-card-4">
+
+    
+    <div
+      id="piechart2"
+      style="width: 700px; height: 400px; position: relative;"
+    ></div>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 280px;"></div>
+  </body>
+</div>
+  <body>
+    <h1>To get link of information pdf of require career field click on button below</h1>
+    <button class="btnm" style="align-content: center;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeO1Vr27-H0i6wtYYxnwl4xRv2uyvE1iY58hNVwPV3C7nEaSw/viewform?usp=sf_link" class="link">Get link</a>
+    </button>
+    
+  </body>
+  
+  
+  
+</html>

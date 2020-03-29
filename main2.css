@@ -1,0 +1,17 @@
+.btnm {
+  align-content: center;
+  margin-left: 10px;
+  background-color: salmon;
+  text-decoration: none;
+  color: white;
+  border: none;
+  margin-top: 0px;
+  border-radius: 5px;
+  margin-top: -10px;
+  margin-left: 0px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
