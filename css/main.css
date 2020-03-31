@@ -1,19 +1,18 @@
-body {
-  font-family: 'Roboto', sans-serif;
+.b1 {
+  font-family: "Roboto", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .logo {
   height: 50vw;
   width: 100%;
-  -webkit-filter: brightness(35%);
-          filter: brightness(35%);
+
   margin: 0px;
 }
 
@@ -25,7 +24,7 @@ span {
   font-size: 50px;
 }
 
-p {
+.p1 {
   color: white;
   position: absolute;
   top: 30%;
@@ -34,21 +33,21 @@ p {
   text-shadow: 2px 2px #0e0101;
 }
 
-.info {
+.info5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
   margin-bottom: 20px;
   margin-top: 30px;
   -ms-flex-line-pack: left;
-      align-content: left;
+  align-content: left;
   margin-left: 0px;
 }
 
-.info .avatar {
+.info5 .avatar5 {
   height: 130px;
   width: 130px;
   border-radius: 50%;
@@ -56,22 +55,22 @@ p {
   border-color: #0e0101;
 }
 
-.info .inf1 {
+.info5 .inf1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
   -ms-flex-line-pack: left;
-      align-content: left;
+  align-content: left;
 }
 
-.info .inf1 .name {
+.info5 .inf1 .name5 {
   font-size: 32px;
   margin-bottom: 3px;
 }
