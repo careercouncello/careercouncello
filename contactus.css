@@ -21,6 +21,13 @@ body {
 
   color: skyblue;
 }
+a {
+  font-size: 110%;
+}
+h1 {
+  margin-right: 50px;
+  font-size: 44px;
+}
 
 hr {
   padding: 0;
@@ -32,7 +39,7 @@ hr {
   border-radius: 50%;
   border: solid;
   border-color: black;
-  padding: 60px;
+  padding: 55px 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +57,7 @@ hr {
   border-radius: 50%;
   border: solid;
   border-color: #b23121;
-  padding: 40px;
+  padding: 15px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +75,7 @@ hr {
   border-radius: 50%;
   border: solid;
   border-color: #25d366;
-  padding: 40px;
+  padding: 25px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +93,7 @@ hr {
   border-radius: 50%;
   border: solid;
   border-color: #e1306c;
-  padding: 50px;
+  padding: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
