@@ -51,18 +51,19 @@ function showScores() {
 
 // create questions
 var questions = [
+  var questions = [
   new Question(
-    "Do you possess interest in agricultural work when you visit your native place",
+    "Do you possess interest in agricultural work when you visit your native place?",
     ["Yes", "No", "Not Sure", "Not noticed yet"],
     "Yes"
   ),
   new Question(
-    "Do you like to cook various food idems at home?",
+    "Do you like to cook various food items at home?",
     ["Yes", "No", "Not Sure", "Not noticed yet"],
     "Yes"
   ),
   new Question(
-    "Do you like to cook various food idems at home?",
+    "Do you help your mother cook at home?",
     ["Yes", "No", "Not Sure", "Not noticed yet"],
     "Yes"
   ),
@@ -112,7 +113,7 @@ var questions = [
       "Low temperature treatment",
       "High temperature treatment",
       "Both",
-      "Steaming treatment"
+      "Steaming treatment",
     ],
     "High temperature treatment"
   ),
@@ -122,7 +123,7 @@ var questions = [
       "Grow with or without air",
       "Grow with or without air",
       " Need more moisture than molds",
-      "All of the above"
+      "All of the above",
     ],
     "All of the above"
   ),
@@ -132,7 +133,7 @@ var questions = [
       "Plantation agriculture",
       "Shifting agriculture",
       "Horticulture",
-      "Intensive agriculture"
+      "Intensive agriculture",
     ],
     "Plantation agriculture"
   ),
