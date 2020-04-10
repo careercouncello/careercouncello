@@ -1,14 +1,15 @@
 function vishaln() {
   var e = b.toString();
   localStorage.setItem("COMMERCE", e);
-  var t = 1;
-  var vw = t.toString();
-  localStorage.setItem("ale2", vw);
+
+  document.write('<body style="background:#c6ffdd"></body>');
   document.write(
-    "<h1>Congratulations You Have Successfully Completed the 1st Section</h1>"
+    '<h1 style=" margin-left: 35%;@media screen(min-width:1200px){ margin-left: 20%;}">You have completed this section.</h1>'
   );
-  document.write("<h1>Click on the button for next section</h1>");
   document.write(
-    '<button id="mybutton"><a href="catagory.html">NEXT SECTION</a></button>'
+    '<h1 style=" margin-left: 35%;margin-right: 20%;">Click here to start another section.</h1>'
+  );
+  document.write(
+    '<a href="catagory.html" style="text-decoration: none; font-size:2rem; margin-left: 46%; font-weight: x-large; text-align:center; background-color: #013243; color: #fff;padding: 1%; border-radius: 5px;border-color: crimson;">category</a>'
   );
 }
