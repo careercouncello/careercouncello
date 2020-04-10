@@ -58,54 +58,54 @@ function showbtn() {
 
 // create questions
 var questions = [
-  new Question(
+ new Question(
     "Do you like to spend hours in solving difficult mathematical questions?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
-    "Yes"
-  ),
-  new Question(
-    "Would you like to solve mathematical problem in different ways with differen solutions?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
-    "Yes"
-  ),
-  new Question(
-    "Do you like to solve and find proof of theorems?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "would you like to discover new technology?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
+    "Yes"
+  ),
+  new Question(
+    "Do you like to solve and find proof of theorems?",
+    ["Yes", "No", "Not Sure", "Not notice yet"],
+    "Yes"
+  ),
+  new Question(
+    "Would you like to solve mathematical problem in different ways with differen solutions?",
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Do you like to read space related articles or books?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Are you interested to work simpler through technology?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Would you like to develop a new computer software?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "would you like to explore different theories of physics?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "would you like to work in a chemical laboratory?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Do you ever wondered how a chemical reaction works?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
@@ -119,7 +119,7 @@ var questions = [
     "13,14"
   ),
   new Question(
-    "Find C. 3x-(1/4)y=6 & 4x-(1/3)y=C?",
+    "Find C: 3x-(1/4)y=6 & 4x-(1/3)y=C ?",
     ["12", "10", "8", "16"],
     "8"
   ),
@@ -149,7 +149,7 @@ var questions = [
       "Electrostatic Force",
       "Gravitational Force",
       "Magnetic Force",
-      "nuclear force"
+      "nuclear force",
     ],
     "Gravitational Force"
   ),
@@ -185,7 +185,7 @@ var questions = [
       "1 proton only",
       "2neutron only",
       "1 proton + 2 neutron",
-      "1 neutron only"
+      "1 neutron only",
     ],
     "1 proton only"
   )
