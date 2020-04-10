@@ -1,6 +1,6 @@
 .btnm {
   align-content: center;
-  margin-left: 10px;
+  margin-left: 45%;
   background-color: salmon;
   text-decoration: none;
   color: white;
@@ -8,7 +8,7 @@
   margin-top: 0px;
   border-radius: 5px;
   margin-top: -10px;
-  margin-left: 0px;
+  
 }
 a {
   color: white;
