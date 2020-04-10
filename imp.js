@@ -1,17 +1,15 @@
 function vishaln() {
   var c = b.toString();
   localStorage.setItem("SCIENCE AND TECHNOLOGY", c);
-  var r = 1;
-  var pqr = r.toString();
-  localStorage.setItem("ale", pqr);
 
+  document.write('<body style="background:#c6ffdd"></body>');
   document.write(
-    "<h1 allign='centre'>Congratulations You Have Successfully Completed the 1st Section</h1>"
+    '<h1 style=" margin-left: 35%;@media screen(min-width:1200px){ margin-left: 20%;}">You have completed this section.</h1>'
   );
   document.write(
-    "<h1 allign='centre'>Click on the button to reach catagory & start another section</h1>"
+    '<h1 style=" margin-left: 35%;margin-right: 20%;">Click here to start another section.</h1>'
   );
   document.write(
-    '<button id="mybutton"><a href="catagory.html">Catagory</a></button>'
+    '<a href="catagory.html" style="text-decoration: none; font-size:2rem; margin-left: 46%; font-weight: x-large; text-align:center; background-color: #013243; color: #fff;padding: 1%; border-radius: 5px;border-color: crimson;">category</a>'
   );
 }
