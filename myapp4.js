@@ -51,7 +51,7 @@ function showScores() {
 
 // create questions
 var questions = [
-  var questions = [
+  
   new Question(
     "Do you possess interest in agricultural work when you visit your native place?",
     ["Yes", "No", "Not Sure", "Not noticed yet"],
