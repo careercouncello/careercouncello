@@ -51,7 +51,7 @@ function showScores() {
 
 // create questions
 var questions = [
-  new Question(
+ new Question(
     "Are you fond of reading various books",
     ["Yes", "No", "Not Sure", "Not noticed yet"],
     "Yes"
@@ -92,7 +92,7 @@ var questions = [
       "CR Das and Motilal Nehru",
       "CR Das and Jawaharlal Nehru",
       "CR Das and Gandhiji",
-      "CR Das and Dr B.R Ambedkar"
+      "CR Das and Dr B.R Ambedkar",
     ],
     "CR Das and Motilal Nehru"
   ),
@@ -102,7 +102,7 @@ var questions = [
       "Jallianwala Bagh Massacre",
       "The Rowlett act",
       "Chauri Chaura",
-      "Arrest of Alluri Sitaram Rammaya"
+      "Arrest of Alluri Sitaram Rammaya",
     ],
     "Chauri Chaura"
   ),
@@ -112,7 +112,7 @@ var questions = [
       "Madrid and London",
       "London and Paris",
       "Paris and New York",
-      "London and New York"
+      "London and New York",
     ],
     "London and Paris"
   ),
@@ -137,7 +137,7 @@ var questions = [
       "Present continuous",
       "Past continuous",
       "Simple past",
-      "Past perfect continuous"
+      "Past perfect continuous",
     ],
     "Past perfect continuous"
   ),
@@ -147,7 +147,7 @@ var questions = [
       "People were busy fighting the war",
       "Factories closed down due to security problem",
       "Factories and mills were busy producing goods to fulfill the need of army",
-      "Export trade was restricted by the government"
+      "Export trade was restricted by the government",
     ],
     "Factories and mills were busy producing goods to fulfill the need of army"
   )
