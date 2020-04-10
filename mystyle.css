@@ -1,5 +1,5 @@
 body {
-  background-color: #eddece;
+  background-color: #c6ffdd;
   font-family: "Roboto";
 }
 
@@ -9,23 +9,24 @@ body {
   margin: 0 auto;
   background-color: rgb(253, 245, 236);
   padding: 10px 50px 50px 50px;
-  border-radius: 50px;
-  border: 2px solid #cbcbcb;
-  box-shadow: 10px 15px 5px #bfb5a8;
+  border-radius: 0px;
+
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.16),
+    0 10px 15px 0 rgba(0, 0, 0, 0.12);
 }
 
 .grid h1 {
   font-family: "sans-serif";
-  background-color: #a85e0f;
+  background-color: #013243;
   font-size: 60px;
   text-align: center;
   color: #ffffff;
   padding: 2px 0px;
-  border-radius: 50px;
+  border-radius: 0px;
 }
 
 #score {
-  color: #a85e0f;
+  color: #013243;
   text-align: center;
   font-size: 30px;
 }
@@ -33,7 +34,7 @@ body {
 .grid #question {
   font-family: "monospace";
   font-size: 30px;
-  color: #a85e0f;
+  color: #013243;
 }
 
 .buttons {
@@ -44,7 +45,7 @@ body {
 #btn1,
 #btn2,
 #btn3 {
-  background-color: #a85e0f;
+  background-color: #013243;
   width: 250px;
   font-size: 20px;
   color: #fff;
@@ -70,11 +71,11 @@ body {
 }
 
 #progress {
-  color: #a85e0f;
+  color: #013243;
   font-size: 18px;
 }
 button {
-  background-color: #a85e0f;
+  background-color: #013243;
   border-style: none;
   font-size: 1.5em;
   border-radius: 10px;
@@ -82,5 +83,5 @@ button {
   color: #fff;
   text-align: center;
   align-content: center;
-  margin-left: 720px;
+  margin-left: 47%;
 }
