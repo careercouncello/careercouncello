@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: "Roboto";
   color: #19191f;
-  background-color: rgb(253, 245, 236);
+  background-color: #c6ffdd;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -45,9 +45,9 @@ body {
 
 .info .inf1 .socfb {
   margin-top: 10px;
-  color: red;
+  color: #fff;
   text-decoration: none;
-  background-color: rosybrown;
+  background-color: #013243;
   padding: 5px 10px;
   border-radius: 12px;
   width: -webkit-fit-content;
@@ -60,16 +60,7 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  background-color: rgb(253, 245, 236);
-  padding: 1%;
-
-  margin-left: 25%;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1.5px;
-  border-color: #d64541;
-  margin-right: 25%;
-  box-shadow: 5px 10px #c2ae8f;
+  background-color: #c6ffdd;
 }
 .btnm {
   display: flex;
@@ -81,13 +72,13 @@ body {
   margin-top: 0%;
   color: whitesmoke;
   text-decoration: none;
-  background-color: #d64541;
-  padding: 0.5% 1%;
-  border-radius: 12px;
+  background-color: #013243;
+  padding: 1%;
+  border-radius: 7px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-left: 45%;
+  margin-left: 42%;
 }
 h2 {
   display: flex;
@@ -99,4 +90,3 @@ h2 {
   font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
-//////////////////////
