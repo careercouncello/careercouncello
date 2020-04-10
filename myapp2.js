@@ -53,37 +53,37 @@ function showScores() {
 var questions = [
   new Question(
     "Would you like to manage people's bank accounts in bank?",
-    ["Yes", "No", "Not sure", "Not noticed yet"],
+    ["Yes", "No", "Not sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Would you like to become a chartered accountant?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Do you take part in financial planning strategy of your family?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Do you like to collect information on taxes such as CGST,SGST,etc?",
-    ["Yes", "No", "Not sure", "Not noticed yet"],
+    ["Yes", "No", "Not sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Are you updated about recent currency changes in daily life?",
-    ["Yes", "No", "Not sure", "Not noticed yet"],
+    ["Yes", "No", "Not sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Do you like to invest your money in proper direction and make profit?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Do you like to read economical books?",
-    ["Yes", "No", "Not sure", "Not noticed yet"],
+    ["Yes", "No", "Not sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
@@ -92,9 +92,9 @@ var questions = [
     "16"
   ),
   new Question(
-    "When cheque is written,a cash account shoiuld be?",
-    ["credited", "debited", "Both", "None Of These"],
-    "credited"
+    "1st Governor of RBI?",
+    ["Shashikant Das", "Dr.C.Rangarajan ", "C.D.Deshmukh", "N.S.vishwanathan"],
+    "C.D.Deshmukh"
   ),
   new Question(
     "Pawan medical supplies medicines.On some medicines the rate of GST is 12%,then what is the rate of  CGST and SGST?",
@@ -102,19 +102,29 @@ var questions = [
     "6%"
   ),
   new Question(
-    "Large corporations should report revenues on their income statements when the _________ ?",
-    ["Cash is received", "Revenues are earned", "Both", "None Of These"],
-    "Revenues are earned"
+    "What is the full form of NEFT?",
+    [
+      "Net Electronic Fund Transfer",
+      "National Electronic Fund Transfer",
+      "Nationalc Electronic functional Transfer",
+      " Net Electronic functional Transfer",
+    ],
+    "National Electronic Fund Transfer"
   ),
   new Question(
     "A sum of money at simple interest amounts to Rs.815 in 3 years and to Rs.854 in 4 years. The sum is?",
-    ["690", "700", "702", "698"],
+    ["690", "700", "698", "702"],
     "698"
   ),
   new Question(
-    "Investment earned is ",
-    ["Personal acount", "Nominal account", "Real account", "none of these"],
-    "Real account"
+    "Whose signature is there on 2000rs note?",
+    [
+      "Central Finance Minister ",
+      "Supreme Court Judge",
+      "Prime Minister",
+      "RBI Governor",
+    ],
+    "RBI Governor"
   ),
   new Question(
     "Name the sector in which the government owns most of the assests amd provides all the services?",
@@ -122,14 +132,9 @@ var questions = [
     "Public sector"
   ),
   new Question(
-    "According to the law of economics,the increase in price is directly proportional to _____",
-    [
-      "Decrease in demand",
-      "Decrease in supply",
-      "Increase in supply",
-      "Increase in demand"
-    ],
-    "Increase in demand"
+    "GST act commence form?",
+    ["1st July 2017", "1st December 2017", "1st may 2018", "15th August 2017"],
+    "1st July 2017"
   )
 ];
 
