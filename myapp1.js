@@ -53,37 +53,37 @@ function showScores() {
 var questions = [
   new Question(
     "Do you have interest in knowing functionality of different human organs?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Do you like to read different biological books?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Do you like to treat your family members with different home remedies?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Would you like to treat stray animals from different streets?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Would you like to collect information about different species of plants and make research on them?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Do you suggest your family members for regular health cheakup?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
     "Do you apply first aid to any person suffering from some illness?",
-    ["Yes", "No", "Not Sure", "Not noticed yet"],
+    ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
@@ -122,14 +122,14 @@ var questions = [
     "carbohydrates"
   ),
   new Question(
-    "which of the following possess a double helix structure?",
+    "Ordinary table salt is sodium chloride what is baking soda?",
     [
-      "Ribo-nucleic acid",
-      "Deoxyribo-nucleic acid",
-      "Cytosine",
-      "None of these"
+      "Potassium chloride ",
+      "sodium Bicarbonate ",
+      "Potassium Hydroxide",
+      "Potassium Carbonate",
     ],
-    "Deoxyribo-nucleic acid"
+    "sodium Bicarbonate "
   ),
   new Question(
     "How many sex chromosome are there in human body?",
@@ -144,17 +144,27 @@ var questions = [
   new Question(
     "The average internal temperature of human body is?",
     ["35°c", "36°c", "37°c", "38°c"],
-    "Yes"
+    "37°c"
   ),
   new Question(
-    "which of the following does not come under panthera genus?",
-    ["Lion", "Leopard", "Tiger", "Domestic Cat"],
-    "Yes"
+    "Prokaryotic cells lack?",
+    [
+      "Nucleolus",
+      "Nuclear membrane",
+      "membrane bound by organelles",
+      "All of these",
+    ],
+    "All of these"
   ),
   new Question(
-    "Which ancient Indian physician is known as the 'Father of Surgery' ?",
-    ["Charaka", "Sushruta", "Nagarjuna", "Vegbhatta"],
-    "Sushruta"
+    " Pollination is best defined as?",
+    [
+      "Transfer of pollen from anther to stigma",
+      "Germination of pollen grains",
+      "Growth of pollen tube in ovule",
+      "visiting flowers by insects",
+    ],
+    "Transfer of pollen from anther to stigma"
   )
 ];
 
