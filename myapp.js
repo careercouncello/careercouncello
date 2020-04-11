@@ -64,7 +64,7 @@ var questions = [
     "Yes"
   ),
   new Question(
-    "would you like to discover new technology?",
+    "Would you like to discover new technology?",
     ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
@@ -94,12 +94,12 @@ var questions = [
     "Yes"
   ),
   new Question(
-    "would you like to explore different theories of physics?",
+    "Would you like to explore different theories of physics?",
     ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
   new Question(
-    "would you like to work in a chemical laboratory?",
+    "Would you like to work in a chemical laboratory?",
     ["Yes", "No", "Not Sure", "Not notice yet"],
     "Yes"
   ),
@@ -144,17 +144,17 @@ var questions = [
     "12"
   ),
   new Question(
-    "The weekest force in universe is?",
+    "The weakest force in universe is?",
     [
       "Electrostatic Force",
       "Gravitational Force",
       "Magnetic Force",
-      "nuclear force",
+      "Nuclear force",
     ],
     "Gravitational Force"
   ),
   new Question(
-    "A bike   accelerate uniformly from rest to speed of 7.1m/sec over a distance 35.4 m.Determine the accelaration of bike?",
+    "A bike accelerate uniformly from rest to speed of 7.1m/sec over a distance 35.4 m.Determine the accelaration of bike?",
     ["0.82", "0.89", "0.9", "0.712"],
     "0.712"
   ),
