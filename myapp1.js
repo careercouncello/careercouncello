@@ -97,22 +97,22 @@ var questions = [
     "5"
   ),
   new Question(
-    "what sensory function do the ears provide other than hearing?",
+    "What sensory function do the ears provide other than hearing?",
     ["radiation", "smell", "balance", "comand other organ"],
     "balance"
   ),
   new Question(
-    "the study of function is called?",
+    "The study of function is called?",
     ["ecology", "anatomy", "physiology", "cytology"],
     "physiology"
   ),
   new Question(
-    "the proteins having three diamensional structures are called?",
+    "The proteins having three diamensional structures are called?",
     ["primery", "tertiary", "quaternary", "secondary"],
     "tertiary"
   ),
   new Question(
-    "what is the study of animal life called?",
+    "What is the study of animal life called?",
     ["geology", "cetology", "epidemiology", "zoology"],
     "zoology"
   ),
