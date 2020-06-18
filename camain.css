@@ -75,7 +75,6 @@ body {
   justify-content: center;
 }
 .socf {
-  margin-top: 0%;
   color: white;
   text-decoration: none;
   background-color: #543986;
@@ -84,7 +83,9 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-left: 48%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
   outline: none;
   cursor: pointer;
   border: none;
