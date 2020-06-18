@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: "Roboto";
   color: #19191f;
-  background-color: #c6ffdd;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -22,6 +22,7 @@ body {
   height: 130px;
   width: 130px;
   border-radius: 50%;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .info .inf1 {
@@ -47,20 +48,25 @@ body {
   margin-top: 10px;
   color: #fff;
   text-decoration: none;
-  background-color: #013243;
+  background-color: #f1c40f;
   padding: 5px 10px;
   border-radius: 12px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: 20px;
+
+  transition: 0.3s;
+}
+.info .inf1 .socfb:hover {
+  background-color: #543986;
 }
 .bt {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  background-color: #c6ffdd;
+  background-color: #fff;
 }
 .btnm {
   display: flex;
@@ -70,15 +76,22 @@ body {
 }
 .socf {
   margin-top: 0%;
-  color: whitesmoke;
+  color: white;
   text-decoration: none;
-  background-color: #013243;
+  background-color: #543986;
   padding: 1%;
   border-radius: 7px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-left: 42%;
+  margin-left: 48%;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+.socf:hover {
+  background-color: #f1c40f;
 }
 h2 {
   display: flex;
