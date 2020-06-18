@@ -1,66 +1,52 @@
 body {
-  background-color: #c6ffdd;
-  font-family: "Roboto";
+  width: 100vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hr1 {
+  margin-top: 20px;
+}
+.hr2 {
+  margin-bottom: 20px;
 }
 
 .grid {
-  width: 600px;
-  height: 600px;
-  margin: 0 auto;
-  background-color: rgb(253, 245, 236);
-  padding: 10px 50px 50px 50px;
-  border-radius: 0px;
-
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.16),
-    0 10px 15px 0 rgba(0, 0, 0, 0.12);
-}
-
-.grid h1 {
-  font-family: "sans-serif";
-  background-color: #013243;
-  font-size: 60px;
-  text-align: center;
-  color: #ffffff;
-  padding: 2px 0px;
-  border-radius: 0px;
-}
-body {
-  background-color: #c6ffdd;
-  font-family: "Roboto";
-}
-
-.grid {
+  font-family: monospace;
   width: 600px;
   height: 550px;
-  margin: 0 auto;
-  background-color: rgb(253, 245, 236);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
   padding: 10px 50px 50px 50px;
   border-radius: 0px;
 
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.16),
-    0 10px 15px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .grid h1 {
-  font-family: "sans-serif";
-  background-color: #013243;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f1c40f;
   font-size: 60px;
   text-align: center;
-  color: #ffffff;
+  color: #543986;
   padding: 2px 0px;
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 #score {
-  color: #013243;
+  color: #543986;
   text-align: center;
   font-size: 30px;
 }
 
 .grid #question {
-  font-family: "monospace";
-  font-size: 30px;
-  color: #013243;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  color: #543986;
+  font-weight: 500;
 }
 
 .buttons {
@@ -71,14 +57,15 @@ body {
 #btn1,
 #btn2,
 #btn3 {
-  background-color: #013243;
+  background-color: #fff;
   width: 250px;
   font-size: 20px;
-  color: #fff;
-  border: 1px solid #1d3c6a;
+  color: #543986;
+  border: 0px solid#543986;
   border-radius: 50px;
   margin: 10px 40px 10px 0px;
   padding: 10px 10px;
+  box-shadow: 0 4px 15px 0.5px #543986;
 }
 
 #btn0:hover,
@@ -86,7 +73,8 @@ body {
 #btn2:hover,
 #btn3:hover {
   cursor: pointer;
-  background-color: #57636e;
+  background-color: #543986;
+  color: #fff;
 }
 
 #btn0:focus,
@@ -97,78 +85,25 @@ body {
 }
 
 #progress {
-  color: #013243;
+  color: #543986;
   font-size: 18px;
 }
-button {
-  background-color: #013243;
+.btnmq {
+  background-color: #543986;
   border-style: none;
+  padding: 5px;
   font-size: 1.5em;
   border-radius: 10px;
-  margin-top: 10px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
   align-content: center;
-  margin-left: 47%;
 }
-
-#score {
-  color: #013243;
-  text-align: center;
-  font-size: 30px;
-}
-
-.grid #question {
-  font-family: "monospace";
-  font-size: 30px;
-  color: #013243;
-}
-
-.buttons {
-  margin-top: 30px;
-}
-
-#btn0,
-#btn1,
-#btn2,
-#btn3 {
-  background-color: #013243;
-  width: 250px;
-  font-size: 20px;
-  color: #fff;
-  border: 1px solid #1d3c6a;
-  border-radius: 50px;
-  margin: 10px 40px 10px 0px;
-  padding: 10px 10px;
-}
-
-#btn0:hover,
-#btn1:hover,
-#btn2:hover,
-#btn3:hover {
-  cursor: pointer;
-  background-color: #57636e;
-}
-
-#btn0:focus,
-#btn1:focus,
-#btn2:focus,
-#btn3:focus {
-  outline: 0;
-}
-
-#progress {
-  color: #013243;
-  font-size: 18px;
-}
-button {
-  background-color: #013243;
-  border-style: none;
-  font-size: 1.5em;
-  border-radius: 10px;
-  margin-top: 10px;
-  color: #fff;
-  text-align: center;
-  align-content: center;
-  margin-left: 47%;
+@media (max-width: 450px) {
+  .btnmq {
+    top: 10%;
+  }
 }
