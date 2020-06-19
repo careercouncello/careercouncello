@@ -374,7 +374,7 @@ li::before {
         <!-- <img class="milgaya" src="milgaya.jpeg" alt="" srcset=""> -->
         <h1 class="price-1">99 ₹</h1>
         
-        <a href="#" class="btn-1">Pay Now</a>
+        <a href="https://www.payumoney.com/paybypayumoney/#/A0DEA7850BAA8A877180C7AC3E2EBA5E" class="btn-1"  onclick="regular()">Pay Now</a>
         
     </div>
     <div class="pay-2">
@@ -400,9 +400,26 @@ li::before {
             <p> <s class="cancel"> 299 ₹</s></p>
             <h1 class="price-2">149 ₹</h1>
             
-            <a href="#" class="btn-2">Pay Now</a>
+            <a href="https://www.payumoney.com/paybypayumoney/#/94DAC6A1094024AC6D21EA2CAA7E18B6" class="btn-2" onclick="advance()">Pay Now</a>
         </div>
         </div>
     </div>
+     <script>
+        function regular()
+        {
+            localStorage.removeItem("Flag");  
+            var a=0;
+            var b = a.toString();
+            localStorage.setItem("Flag", b);
+        }
+        function advance()
+        {
+          localStorage.removeItem("Flag");  
+          var c = 1;    
+          var d = c.toString();
+          localStorage.setItem("Flag", d); 
+         
+         }
+    </script>
 </body>
 </html>
