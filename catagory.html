@@ -85,7 +85,7 @@
             Science and technology
           </div>
 
-          <a href="w3.html" class="socfb" id="">
+          <a href="myindex.html" class="socfb" id="">
             Lets begin
           </a>
           <t
@@ -135,7 +135,7 @@
       <div class="info">
         <img src="images/arts.jpeg" alt="Avatar" class="avatar" />
         <div class="inf1">
-          <div class="name">Arts And Literature</div>
+          <div class="name">Arts</div>
           <!-- <span class="dep">Website Development</span>-->
           <a href="MYINDEX3.html" class="socfb">Lets begin </a>
           <t
@@ -168,10 +168,21 @@
       <h2></h2>
       <br />
       <div class="btnm">
-        <a href="if.html" class="socf" id="">
-          Getresult
-        </a>
+        <button onclick="pdf()" class="socf" id="">
+          Get result
+        </button>
       </div>
     </div>
+    <script>
+      function pdf() {
+        var qwe = localStorage.getItem("Flag");
+        if (qwe == "0") {
+          window.location = "qwe.html";
+        }
+        if (qwe == "1") {
+          window.location = "if.html";
+        }
+      }
+    </script>
   </body>
 </html>
