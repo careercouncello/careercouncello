@@ -19,10 +19,8 @@
         margin-right: 15px;
       }
       #results {
-        margin: 20px;
+        margin: 0px;
         padding: 20px;
-        border: 1px solid;
-        background: #ccc;
       }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
@@ -41,13 +39,13 @@
     <!-- Configure a few settings and attach camera -->
     <script language="JavaScript">
       Webcam.set({
-        width: 480,
-        height: 620,
+        width: 1270,
+        height: 720,
         image_format: "jpeg",
         jpeg_quality: 90,
         constraints: {
-          width: { exact: 480 },
-          height: { exact: 620 },
+          width: { exact: 1270 },
+          height: { exact: 720 },
           facingMode: "environment",
         },
       });
