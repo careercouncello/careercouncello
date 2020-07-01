@@ -22,6 +22,10 @@
         margin: 0px;
         padding: 20px;
       }
+      .image {
+        width: 100vw;
+        height: 40vh;
+      }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
   </head>
@@ -66,7 +70,7 @@
           // display results in page
           document.getElementById("results").innerHTML =
             "<h2>Here is your large image:</h2>" +
-            '<img src="' +
+            '<img class="image" src="' +
             data_uri +
             '"/>';
         });
