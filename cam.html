@@ -40,16 +40,15 @@
 
     <!-- Configure a few settings and attach camera -->
     <script language="JavaScript">
-      Webcam.set("constraints", {
-        deviceId: { exact: deviceId },
-
-        width: 1280,
-        height: 720,
+      Webcam.set({
+        width: 480,
+        height: 620,
         image_format: "jpeg",
         jpeg_quality: 90,
         constraints: {
-          width: { exact: 1280 },
-          height: { exact: 720 },
+          width: { exact: 480 },
+          height: { exact: 620 },
+          facingMode: "environment",
         },
       });
 
