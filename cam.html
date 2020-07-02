@@ -1,82 +1,92 @@
-<!DOCTYPE html>
 
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>WebcamJS Test Page - HD Capture</title>
-    <style type="text/css">
-      body {
-        font-family: Helvetica, sans-serif;
-      }
-      h2,
-      h3 {
-        margin-top: 0;
-      }
-      form {
-        margin-top: 15px;
-      }
-      form > input {
-        margin-right: 15px;
-      }
-      #results {
-        margin: 0px;
-        padding: 20px;
-      }
-      .image {
-        width: 100vw;
-        height: 40vh;
-      }
+
+<html>
+    <head>
+    <style>
+    #preview {
+    background: red;
+    border: 1px solid green;
+    }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
-  </head>
-  <body>
-    <h1>WebcamJS Test Page - HD Capture</h1>
-    <h3>
-      Demonstrates 720p HD capture (1280x720), if your camera supports it!
-    </h3>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://jcrop-cdn.tapmodo.com/v0.9.12/js/jquery.Jcrop.min.js"></script>
+    <link rel="stylesheet" href="http://jcrop-cdn.tapmodo.com/v0.9.12/css/jquery.Jcrop.css" type="text/css" />
 
-    <div id="my_camera"></div>
-
-    <!-- First, include the Webcam.js JavaScript Library -->
-    <script type="text/javascript" src="../webcam.min.js"></script>
-
-    <!-- Configure a few settings and attach camera -->
-    <script language="JavaScript">
-      Webcam.set({
-        width: 1270,
-        height: 720,
-        image_format: "jpeg",
-        jpeg_quality: 90,
-        constraints: {
-          width: { exact: 1270 },
-          height: { exact: 720 },
-          facingMode: "environment",
-        },
-      });
-
-      Webcam.attach("#my_camera");
-    </script>
-
-    <!-- A button for taking snaps -->
-    <form>
-      <input type="button" value="Take HD Snapshot" onClick="take_snapshot()" />
-    </form>
-
-    <!-- Code to handle taking the snapshot and displaying it locally -->
-    <script language="JavaScript">
-      function take_snapshot() {
-        // take snapshot and get image data
-        Webcam.snap(function (data_uri) {
-          // display results in page
-          document.getElementById("results").innerHTML =
-            "<h2>Here is your large image:</h2>" +
-            '<img class="image" src="' +
-            data_uri +
-            '"/>';
+    <script type="text/javascript">
+         $(document).delegate(':file', 'change', function() {
+            picture(this);
+            console.log('running');
         });
-      }
-    </script>
 
-    <div id="results">Your captured image will appear here...</div>
-  </body>
+         //$(document).delegate(':form', 'change', function() {
+
+        var picture_width;
+        var picture_height;
+        var crop_max_width = 300;
+        var crop_max_height = 300;
+        function picture(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $("#jcrop, #preview").html("").append("<img src=\""+e.target.result+"\" alt=\"\" />");
+                    picture_width = $("#preview img").width();
+                    picture_height = $("#preview img").height();
+                    $("#jcrop  img").Jcrop({
+                        onChange: canvas,
+                        onSelect: canvas,
+                        boxWidth: crop_max_width,
+                        boxHeight: crop_max_height
+                    });
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        function canvas(coords){
+            var imageObj = $("#jcrop img")[0];
+            var canvas = $("#canvas")[0];
+            canvas.width  = coords.w;
+            canvas.height = coords.h;
+            var context = canvas.getContext("2d");
+            context.drawImage(imageObj, coords.x, coords.y, coords.w, coords.h, 0, 0, canvas.width, canvas.height);
+            png();
+        }
+        function png() {
+            var png = $("#canvas")[0].toDataURL('image/png');
+            $("#png").val(png);
+        }
+        function dataURLtoBlob(dataURL) {
+            var BASE64_MARKER = ';base64,';
+            if(dataURL.indexOf(BASE64_MARKER) == -1) {
+                var parts = dataURL.split(',');
+                var contentType = parts[0].split(':')[1];
+                var raw = decodeURIComponent(parts[1]);
+
+                return new Blob([raw], {type: contentType});
+            }
+            var parts = dataURL.split(BASE64_MARKER);
+            var contentType = parts[0].split(':')[1];
+            var raw = window.atob(parts[1]);
+            var rawLength = raw.length;
+            var uInt8Array = new Uint8Array(rawLength);
+            for(var i = 0; i < rawLength; ++i) {
+                uInt8Array[i] = raw.charCodeAt(i);
+            }
+
+            return new Blob([uInt8Array], {type: contentType});
+        }
+    </script>
+    </head>
+    <body>
+       <form id="form">
+        <h2>Image file select</h2>
+        <input id="file" type="file" onchange="imageLoad()" />
+        <h2>Uploaded Image</h2>
+        <div id="jcrop"></div>
+        <h2>Cropped Image</h2>
+        <canvas id="canvas"></canvas>
+        <input id="png" type="hidden" />
+        <h2>Submit form</h2>
+        <input type="submit" value="Upload form data and image" />
+       </form>
+    </body>
 </html>
