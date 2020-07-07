@@ -56,10 +56,6 @@
         right: 20px;
         z-index: 2;
       }
-      video {
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-      }
     </style>
     <!-- Camera -->
     <main id="camera">
@@ -76,11 +72,16 @@
     <script>
       // Set constraints for the video stream
       var constraints = { video: { facingMode: "environment" }, audio: false };
+
       // Define constants
       const cameraView = document.querySelector("#camera--view"),
         cameraOutput = document.querySelector("#camera--output"),
         cameraSensor = document.querySelector("#camera--sensor"),
         cameraTrigger = document.querySelector("#camera--trigger");
+      cameraView.addEventListener("loadedmetadata", function () {
+        ctx.translate(video.videoWidth, 0);
+        ctx.scale(-1, 1);
+      });
       // Access the device camera and stream to cameraView
       function cameraStart() {
         navigator.mediaDevices
