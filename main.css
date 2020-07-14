@@ -135,25 +135,18 @@ body {
 }
 
 .plan {
+  height: 70vh;
   margin-top: 10vh;
-  display: grid;
-  grid-template-columns: 18.5vw 25.5vw 12vw 25.5vw 18.5vw;
-  grid-template-rows: 70vh;
-  margin-bottom: 15vh;
-}
-.regular {
-  position: relative;
   text-align: center;
-  border-radius: 45px;
-  transition: 0.5s ease-out;
-  box-shadow: -7px -7px 20px 0 rgba(255, 255, 255, 0.7),
-    7px 7px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .advance {
+  display: inline-block;
   position: relative;
   border-radius: 45px;
   transition: 0.5s ease-out;
   box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  height: 70vh;
+  width: 25.5vw;
 }
 .imgr {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
@@ -601,13 +594,9 @@ nav {
   .sub-menu-1 button:hover {
     text-decoration: underline;
   }
-  .plan {
-    display: grid;
-    grid-template-columns: 15vw 31vw 8vw 31vw 15vw;
-  }
-  .btnr {
-    position: absolute;
-    left: 6vw;
+  .advance {
+    width: 350px;
+    margin-bottom: 10vh;
   }
 }
 @media (max-width: 1100px) {
@@ -639,10 +628,7 @@ nav {
   .stepscm {
     display: none;
   }
-  .plan {
-    display: grid;
-    grid-template-columns: 8vw 38vw 8vw 38vw 8vw;
-  }
+
   .h4r {
     font-size: 1.8vw;
     margin-top: 35px;
@@ -652,6 +638,29 @@ nav {
   }
 }
 @media (max-width: 900px) {
+  .h1 {
+    display: inline-block;
+    font-family: "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed",
+      "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed",
+      "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold",
+      "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosCnBold", "Helvetica",
+      "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
+    font-weight: 5000;
+    font-stretch: condensed;
+    color: #543986;
+    font-size: 40px;
+    background-color: rgb(241, 197, 14);
+    padding: 10px;
+    border-radius: 50px;
+    width: 700px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2vw #000;
+    margin-top: 2%;
+    box-shadow: 20 4px 10px 20 rgba(0, 0, 0, 0.2),
+      20 4px 20px 20 rgba(0, 0, 0, 0.19);
+  }
   .steps {
     display: none;
   }
@@ -679,13 +688,11 @@ nav {
     display: block;
   }
   .stepsm {
+    margin-top: 7%;
+    text-align: center;
     display: block;
   }
-  .plan {
-    display: grid;
-    grid-template-columns: 6vw 42vw 4vw 42vw 6vw;
-    grid-template-rows: 500px;
-  }
+
   .all {
     margin-right: 15px;
   }
@@ -852,11 +859,14 @@ nav {
     display: none;
   }
   .stepscm {
+    margin-top: 10%;
     display: inline-block;
     margin: 0 15px;
     text-align: center;
   }
-
+  .stepsm {
+    margin-top: -5%;
+  }
   .h1 {
     width: 90vw;
     font-size: 8vw;
@@ -868,17 +878,13 @@ nav {
   }
   .plan {
     display: block;
-    margin: 15vw;
+    text-align: center;
     margin-top: 10vw;
   }
 
-  .regular {
-    position: relative;
-    height: 425px;
-    margin-bottom: 10vh;
-    border-radius: 7px;
-  }
   .advance {
+    display: inline-block;
+    width: 78vw;
     height: 450px;
     margin-bottom: 10vh;
     border-radius: 7px;
@@ -1096,6 +1102,9 @@ nav {
   }
 }
 @media (max-width: 400px) {
+  .stepsm {
+    margin-top: 15%;
+  }
   .bheading {
     font-size: 35px;
   }
@@ -1126,6 +1135,9 @@ nav {
   }
 }
 @media (max-width: 350px) {
+  .stepsm {
+    margin-top: 30%;
+  }
   .down {
     margin-top: 3vh;
     width: 45px;
